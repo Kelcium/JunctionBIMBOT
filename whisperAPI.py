@@ -1,4 +1,3 @@
-import whisper
 from moviepy.editor import VideoFileClip as vfc 
 
 class WhisperClient:
@@ -35,4 +34,4 @@ class WhisperClient:
         audio_extract.close()
         video_extract.close()
 
-        return video, audio, transcription
+        return audio, transcription
