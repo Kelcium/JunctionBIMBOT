@@ -18,10 +18,10 @@ if test == True:
     CVClient = VisionClient(classes)
     video_input = "sample.mp4"
 
-    audio, transcription = VideoClient.process_video(video_input)
+    transcription = VideoClient.process_video(video_input)
     #cvOut = CVClient.video_CV(video_input)
 
-    print(audio, transcription)
+    print(transcription)
 
 personality = 'prompt.txt'
 with open(personality, 'r') as file:

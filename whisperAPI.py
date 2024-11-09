@@ -34,4 +34,4 @@ class WhisperClient:
         audio_extract.close()
         video_extract.close()
 
-        return audio, transcription
+        return transcription
